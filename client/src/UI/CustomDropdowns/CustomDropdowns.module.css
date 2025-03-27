@@ -1,0 +1,17 @@
+.quizDropdown{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    z-index: 2;
+
+}
+
+.quizDropdownLable{
+    font-size: 30px;
+    font-weight: 700;
+
+}
+.quizDropdownLable:hover,
+.quizDropdownLable:focus{
+    color: var(--blueColor)
+}

@@ -1,0 +1,110 @@
+/* AUTH  */
+.mainAuthContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+    margin-bottom: 20px;
+    overflow-x: hidden;
+border-radius: 15px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.2);
+background-color: var(--blueColor);
+background: linear-gradient(135deg, #1a792e, #28a745 );
+
+}
+.formContainer{
+    position: relative;
+    height: 100%;
+    width: 50%;
+    transition: all 500ms ease-in-out;
+    overflow: hidden;
+    display: flex;
+}
+.colloredWrapper{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    background: linear-gradient(270deg, #fd300b, #fd1c51);
+
+    transition: all 500ms ease-in-out;
+}
+.signUpText{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    transition: all 500ms ease-in-out;
+    box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.switchBtn{
+    padding: 15px;
+    border: 2px solid var(--primaryWhiteColor);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: all 300ms ease-in-out;
+}
+.switchBtn:hover,
+.switchBtn:focus{
+    color: var(--blueColor);
+    border: 2px solid var(--blueColor);
+}
+.switchBtn:active{
+  scale: 0.9;
+}
+/* FORM  */
+
+.formThumb{
+
+
+    padding: 30px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    transition: all 500ms ease-in-out;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+.signInForm{
+    background: linear-gradient(135deg, #28a745, #1a792e);
+    box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.3);
+
+}
+.sighUpForm{
+    background: linear-gradient(135deg, #1a792e, #28a745 );
+    box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.3);
+
+    transform: translateX(-100%);
+}
+
+.switchToleft{
+    transform: translateX(-100%);
+}
+.switchToRight{
+    transform: translateX(100%);
+}
+.switchToCenter{
+    transform: translateX(0);
+}
+
+

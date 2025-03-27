@@ -1,0 +1,197 @@
+[
+    {
+      "id": 1,
+      "title": "General Knowledge Quiz",
+      "subTitle": "General subtitle",
+      "description": "Test your general knowledge with these fun questions.",
+      "questions": [
+        {
+          "question": "What is the capital of France?",
+          "questionType": "text",
+          "answers": ["Paris", "London", "Berlin", "Rome"],
+          "correctAnswer": "Paris"
+        },
+        {
+          "question": "Which planet is known as the Red Planet?",
+          "questionType": "text",
+          "answers": ["Mars", "Venus", "Jupiter", "Saturn"],
+          "correctAnswer": "Mars"
+        },
+        {
+          "question": "How many continents are there on Earth?",
+          "questionType": "text",
+          "answers": ["5", "6", "7", "8"],
+          "correctAnswer": "7"
+        },
+        {
+          "question": "Who wrote 'Hamlet'?",
+          "questionType": "text",
+          "answers": ["Shakespeare", "Hemingway", "Tolkien", "Austen"],
+          "correctAnswer": "Shakespeare"
+        },
+        {
+          "question": "What is the largest ocean on Earth?",
+          "questionType": "text",
+          "answers": ["Atlantic", "Indian", "Pacific", "Arctic"],
+          "correctAnswer": "Pacific"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Science Trivia",
+      "subTitle": "General subtitle",
+
+      "description": "Challenge yourself with these science-related questions.",
+      "questions": [
+        {
+          "question": "What is the chemical symbol for water?",
+          "questionType": "text",
+          "answers": ["O2", "H2O", "CO2", "NaCl"],
+          "correctAnswer": "H2O"
+        },
+        {
+          "question": "Which gas do plants absorb from the atmosphere?",
+          "questionType": "text",
+          "answers": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
+          "correctAnswer": "Carbon Dioxide"
+        },
+        {
+          "question": "What is the hardest natural substance on Earth?",
+          "questionType": "text",
+          "answers": ["Gold", "Iron", "Diamond", "Quartz"],
+          "correctAnswer": "Diamond"
+        },
+        {
+          "question": "What is the speed of light in a vacuum?",
+          "questionType": "text",
+          "answers": ["299,792 km/s", "150,000 km/s", "1,000,000 km/s", "3,000 km/s"],
+          "correctAnswer": "299,792 km/s"
+        },
+        {
+          "question": "Who developed the theory of relativity?",
+          "questionType": "text",
+          "answers": ["Newton", "Einstein", "Tesla", "Galileo"],
+          "correctAnswer": "Einstein"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "History Quiz",
+      "subTitle": "General subtitle",
+
+      "description": "How well do you know world history?",
+      "questions": [
+        {
+          "question": "Who was the first President of the United States?",
+          "questionType": "text",
+          "answers": ["Abraham Lincoln", "George Washington", "Thomas Jefferson", "John Adams"],
+          "correctAnswer": "George Washington"
+        },
+        {
+          "question": "In which year did World War II end?",
+          "questionType": "text",
+          "answers": ["1943", "1945", "1947", "1950"],
+          "correctAnswer": "1945"
+        },
+        {
+          "question": "Which ancient civilization built the pyramids?",
+          "questionType": "text",
+          "answers": ["Romans", "Greeks", "Egyptians", "Mayans"],
+          "correctAnswer": "Egyptians"
+        },
+        {
+          "question": "Who discovered America?",
+          "questionType": "text",
+          "answers": ["Christopher Columbus", "Vasco da Gama", "James Cook", "Marco Polo"],
+          "correctAnswer": "Christopher Columbus"
+        },
+        {
+          "question": "What was the name of the ship that brought the Pilgrims to America?",
+          "questionType": "text",
+          "answers": ["Santa Maria", "Titanic", "Mayflower", "Endeavour"],
+          "correctAnswer": "Mayflower"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Sports Quiz",
+      "subTitle": "General subtitle",
+
+      "description": "Test your knowledge of sports and athletics.",
+      "questions": [
+        {
+          "question": "How many players are there in a soccer team?",
+          "questionType": "text",
+          "answers": ["9", "10", "11", "12"],
+          "correctAnswer": "11"
+        },
+        {
+          "question": "Which country has won the most FIFA World Cups?",
+          "questionType": "text",
+          "answers": ["Germany", "Italy", "Brazil", "Argentina"],
+          "correctAnswer": "Brazil"
+        },
+        {
+          "question": "What is the national sport of Japan?",
+          "questionType": "text",
+          "answers": ["Karate", "Judo", "Sumo Wrestling", "Baseball"],
+          "correctAnswer": "Sumo Wrestling"
+        },
+        {
+          "question": "Which sport is known as the 'king of sports'?",
+          "questionType": "text",
+          "answers": ["Tennis", "Soccer", "Basketball", "Cricket"],
+          "correctAnswer": "Soccer"
+        },
+        {
+          "question": "How many rings are there in the Olympic logo?",
+          "questionType": "text",
+          "answers": ["4", "5", "6", "7"],
+          "correctAnswer": "5"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Movie Trivia",
+      "subTitle": "General subtitle",
+
+      "description": "Are you a movie buff? Test your knowledge here!",
+      "questions": [
+        {
+          "question": "Who directed the movie 'Inception'?",
+          "questionType": "text",
+          "answers": ["Christopher Nolan", "Steven Spielberg", "James Cameron", "Quentin Tarantino"],
+          "correctAnswer": "Christopher Nolan"
+        },
+        {
+          "question": "Which movie won the Best Picture Oscar in 1994?",
+          "questionType": "text",
+          "answers": ["Titanic", "Forrest Gump", "Pulp Fiction", "The Shawshank Redemption"],
+          "correctAnswer": "Forrest Gump"
+        },
+        {
+          "question": "Who played Jack in 'Titanic'?",
+          "questionType": "text",
+          "answers": ["Brad Pitt", "Tom Cruise", "Leonardo DiCaprio", "Johnny Depp"],
+          "correctAnswer": "Leonardo DiCaprio"
+        },
+        {
+          "question": "Which animated movie features a cowboy doll named Woody?",
+          "questionType": "text",
+          "answers": ["Shrek", "Toy Story", "The Lion King", "Finding Nemo"],
+          "correctAnswer": "Toy Story"
+        },
+        {
+          "question": "What is the highest-grossing movie of all time (without inflation adjustment)?",
+          "questionType": "text",
+          "answers": ["Avatar", "Avengers: Endgame", "Titanic", "Star Wars: The Force Awakens"],
+          "correctAnswer": "Avatar"
+        }
+      ]
+    }
+  ]
+  

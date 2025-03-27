@@ -1,0 +1,23 @@
+.authMenu{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 3px solid var(--blueColor);
+    background-color: var(--primaryWhiteColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.authMenu:hover, 
+.authMenu:focus {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3), 0 12px 24px rgba(0, 0, 0, 0.3);
+
+  }
