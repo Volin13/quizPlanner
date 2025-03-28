@@ -66,8 +66,6 @@ background: linear-gradient(135deg, #1a792e, #28a745 );
 /* FORM  */
 
 .formThumb{
-
-
     padding: 30px;
     height: 100%;
     width: 100%;
@@ -84,6 +82,12 @@ background: linear-gradient(135deg, #1a792e, #28a745 );
     align-items: center;
     gap: 20px;
     width: 100%;
+}
+.formInputGroup{
+    height: 80px;
+}
+.formInput{
+    height: 48px;
 }
 .signInForm{
     background: linear-gradient(135deg, #28a745, #1a792e);

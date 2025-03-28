@@ -1,11 +1,12 @@
 import React from 'react';
-import QuizItem from '../components/QuizList/QuizItem';
+
 import { Container } from 'react-bootstrap';
+import Quiz from '../components/Quiz/Quiz';
 
 const QuizItemPage = () => {
   return (
     <Container>
-      <QuizItem />
+      <Quiz />
     </Container>
   );
 };

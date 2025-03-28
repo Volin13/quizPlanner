@@ -10,7 +10,7 @@ import DeleteQuizModal from '../modals/DeleteQuiz/DeleteQuizModal';
 import EditQuizModal from '../modals/editQuiz/editQuizModal';
 import QuizCardPlaceholder from '../../UI/Placeholders/QuizCardPlaceholder';
 
-const QuizItem = ({id, questionsList, title, subTitle, description}) => {
+const QuizListItem = ({id, questionsList, title, subTitle, description}) => {
   const [showEditQuizModal, setShowEditQuizModal] = useState(false);
   const [showDeleteQuizModal, setShowDeleteQuizModal] = useState(false);
   const [isHoveredCard, setIsHoveredCard] = useState(false);
@@ -54,4 +54,4 @@ const QuizItem = ({id, questionsList, title, subTitle, description}) => {
   )
 }
 
-export default QuizItem
+export default QuizListItem

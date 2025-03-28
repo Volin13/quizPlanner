@@ -30,6 +30,13 @@
     transform: translateY(-105%);
 }
 .quizTitleStart{
+    display: -webkit-box;
+    -webkit-line-clamp: 2; 
+    line-clamp: 2; 
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
     text-align: center;
     width:  100%;
     transition: all 300ms ease-in-out;
@@ -59,10 +66,16 @@
 .quizListItem:hover .quizListItemBody {
     opacity: 1; 
   }
+
 .quizTitle{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 340px; 
     cursor: pointer;
     text-decoration: underline;
 transition: color 0.3s ease-in-out;
+
 }
 .quizTitle:hover,
 .quizTitle:focus{

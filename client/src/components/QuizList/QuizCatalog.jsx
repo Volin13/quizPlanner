@@ -1,5 +1,5 @@
 import React from 'react'
-import QuizItem from './QuizItem'
+import QuizListItem from './QuizListItem'
 import css from './QuizCatalog.module.css'
 import quizList from './quizMock.json'
 
@@ -21,7 +21,7 @@ console.log(quizList )
     ) : quizList && quizList.length > 0 ? (
       <ul className={css.quizList}>
         {quizList.map((item) => (
-          <QuizItem   
+          <QuizListItem   
           key={item.id} 
           id={item.id} 
           title={item.title}

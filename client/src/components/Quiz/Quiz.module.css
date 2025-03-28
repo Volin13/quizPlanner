@@ -1,0 +1,28 @@
+.quizMainImg {
+    position: relative;
+    display: inline-block;
+    height: 400px;
+    aspect-ratio: 1.78;
+    border: 10px solid transparent;
+    border-radius: 12px;
+    animation: borderAnimation 8s linear infinite;
+  }
+  
+  @keyframes borderAnimation {
+    0% {
+      border-image-source: linear-gradient(90deg, red, blue, green);
+    }
+    33% {
+      border-image-source: linear-gradient(180deg, red, blue, green);
+    }
+    66% {
+      border-image-source: linear-gradient(270deg, red, blue, green);
+    }
+    100% {
+      border-image-source: linear-gradient(360deg, red, blue, green);
+    }
+  }
+  
+  .quizMainImg {
+    border-image-slice: 1;
+  }

@@ -12,7 +12,10 @@ const schema = yup.object({
 
 const AuthForm = ({ heading, fields, submitLabel, switched, switchedClass, regularClass }) => {
     
-  const { register, handleSubmit, formState: { errors } } = useForm({
+const loading = false
+
+
+  const { register, handleSubmit, formState: { isValid, errors } } = useForm({
     resolver: yupResolver(schema)
   });
 
@@ -22,27 +25,34 @@ const AuthForm = ({ heading, fields, submitLabel, switched, switchedClass, regul
     <div className={`${css.formThumb} ${regularClass} ${switched ? switchedClass : ""}`}>
       <h3 className={css.formTitle}>{heading}</h3>
       <form className={css.form} onSubmit={handleSubmit(onSubmit)}>
-        <ul className="d-flex flex-column align-items-center">
+        <ul className="d-flex flex-column align-items-center w-75">
           {fields.map((field) => (
             <li key={field} className="w-100">
-              <Form.Group className="mb-3">
-                <InputGroup>
-                  <InputGroup.Text>{field}</InputGroup.Text>
+              <Form.Group className="mb-1 w-100">
+                <InputGroup className={css.formInputGroup}>
+                  <InputGroup.Text
+                      className={css.formInput}
+                  >                  
+                  {field}                  
+                  </InputGroup.Text>
                   <Form.Control
                     {...register(field)}
                     placeholder={`Type your ${field}`}
                     type={field}
                     isInvalid={!!errors[field]}
+                    className={css.formInput}
                   />
-                  <Form.Control.Feedback type="invalid">
-                    {errors[field]?.message}
+                  <Form.Control.Feedback 
+                  className='fw-semibold text-center'
+                  type="invalid">
+                    {errors[field]?.message} ПОМИЛКА
                   </Form.Control.Feedback>
                 </InputGroup>
               </Form.Group>
             </li>
           ))}
         </ul>
-        <button type="submit" className={css.switchBtn}>
+        <button disabled={!isValid || loading} type="submit" className={css.switchBtn}>
           {submitLabel}
         </button>
       </form>
