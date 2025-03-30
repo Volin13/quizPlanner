@@ -1,6 +1,6 @@
-import jwt from "jsonwebtoken";
-import User from "../models/models";
-import ApiError from "../error/ApiError";
+const jwt = require("jsonwebtoken");
+const { User } = require('../models/models');
+const ApiError = require("../error/ApiError");
 
 
 
@@ -26,5 +26,4 @@ const authMiddleware = async (req, res, next) => {
     return next(ApiError.unauthorized("Token is not valid"));
   }
 };
-
-export default authMiddleware;
+module.exports = { authMiddleware };

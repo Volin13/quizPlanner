@@ -1,6 +1,6 @@
 const sequelize = require("../db");
 const { DataTypes, Model } = require("sequelize");
-import bcrypt from "bcrypt";
+const bcrypt = require("bcrypt");
 
 
 class Quiz extends Model {}

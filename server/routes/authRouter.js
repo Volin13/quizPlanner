@@ -1,13 +1,13 @@
 const Router = require('express');
 const router = new Router();
-
-import authMiddleware from "../middleware/authMiddleware";
-import authController from "../controllers/auth";
+const authMiddleware = require('../middleware/authMiddleware');
+const authController = require('../controllers/auth');
 
 router.post('/register', authController.register);
 router.post('/login',  authController.login);
 
+module.exports = router;
 
-router.get("/profile", authMiddleware, async (req, res) => {
-  res.json({ user: req.user });
-});
+// router.get("/profile", authMiddleware, async (req, res) => {
+//   res.json({ user: req.user });
+// });
