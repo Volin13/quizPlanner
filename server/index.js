@@ -1,5 +1,7 @@
 require("dotenv").config();
 const express = require("express");
+const passport = require("./config/pasport");
+const cookieParser = require("cookie-parser");
 const sequelize = require("./db");
 const models = require("./models/models");
 const cors = require("cors");
@@ -12,10 +14,15 @@ const PORT = process.env.PORT || 5000;
 
 const app = express();
 app.use(cors());
+app.use(passport.initialize());
+app.use(cookieParser());
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(express.static(path.resolve(__dirname, "static")));
 app.use(fileUpload({}));
 app.use("/api", router);
+app.use(express.static(path.resolve(__dirname, "static")));
+
+
 
 app.use(errorHandler);
 
@@ -26,7 +33,8 @@ const start = async () => {
     // sequelize.sync({ force: true });
     app.listen(PORT, () => console.log(`Server started at port ${PORT}`));
   } catch (e) {
-    console.log(e);
+    console.error("Database connection error:", e);
+    process.exit(1); 
   }
 };
 

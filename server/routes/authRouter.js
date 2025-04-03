@@ -5,9 +5,6 @@ const authController = require('../controllers/auth');
 
 router.post('/register', authController.register);
 router.post('/login',  authController.login);
-
+router.post("/refresh-token", authController.refreshToken);
 module.exports = router;
 
-// router.get("/profile", authMiddleware, async (req, res) => {
-//   res.json({ user: req.user });
-// });

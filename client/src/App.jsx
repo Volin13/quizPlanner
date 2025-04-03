@@ -31,6 +31,7 @@ function App() {
               <div className="mainSection" style={{ flex: 1 }}>
 
                 <AppRouter />
+
               </div>
               {/* <FooterBar /> */}
             </Suspense>

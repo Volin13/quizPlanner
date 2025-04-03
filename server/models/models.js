@@ -87,7 +87,13 @@ Question.init(
       timestamps: true,
     }
   );
+  
 
+  Quiz.hasMany(Question, { as: 'questions' });
+  Question.belongsTo(Quiz);
+
+  User.hasMany(Quiz, { as: 'quizzes' });
+  Quiz.belongsTo(User);
 
 module.exports = {
 Quiz,
