@@ -5,6 +5,8 @@ import { useNavigate } from 'react-router-dom';
 import { QUIZ_ROUTE } from '../../utils/constants';
 import Card from 'react-bootstrap/Card';
 import Image from 'react-bootstrap/Image';
+import { useSortable } from '@dnd-kit/sortable';
+import { CSS } from '@dnd-kit/utilities';
 
 import DeleteQuizModal from '../modals/DeleteQuiz/DeleteQuizModal';
 import EditQuizModal from '../modals/editQuiz/editQuizModal';
@@ -14,13 +16,31 @@ const QuizListItem = ({id, questionsList, title, subTitle, description}) => {
   const [showEditQuizModal, setShowEditQuizModal] = useState(false);
   const [showDeleteQuizModal, setShowDeleteQuizModal] = useState(false);
   const [isHoveredCard, setIsHoveredCard] = useState(false);
-  
-  const loading = false
   const navigate = useNavigate();
+  const loading = false
+
+  const {
+    attributes,
+    listeners,
+    setNodeRef,
+    transform,
+    transition,
+    isDragging,
+  } = useSortable({ id });
+
+ const style = {
+    transform: CSS.Transform.toString(transform),
+    transition,
+    opacity: isDragging ? 0.5 : 1,
+  };
+
   return (
     <li className='d-flex justify-content-center ' 
     onMouseEnter={() => setIsHoveredCard(true)} 
-    onMouseLeave={() => setIsHoveredCard(false)}>
+    onMouseLeave={() => setIsHoveredCard(false)}
+    ref={setNodeRef} style={style} {...attributes} {...listeners}
+    >
+      
 {loading ? (<QuizCardPlaceholder/>
 ) : (
   <Card className={css.quizListItem}>
@@ -31,14 +51,20 @@ const QuizListItem = ({id, questionsList, title, subTitle, description}) => {
     <Card.Body className={`d-flex flex-column justify-content-between align-items-center text-center ${css.quizListItemBody}`}>
   <Card.Title
       className={css.quizTitle}
-      onClick={() => navigate(QUIZ_ROUTE + '/' + id)}
+      onClick={() =>{ 
+       
+        navigate(QUIZ_ROUTE + '/' + id)
+        console.log("click!")
+      }}
+      onPointerDown={(e) => e.stopPropagation()}
+      
       style={{ cursor: 'pointer', textDecoration: 'underline' }}
       >{title}</Card.Title>
       <Card.Subtitle className="mb-2 text-muted">{subTitle}</Card.Subtitle>
       <Card.Text>
 {description}
       </Card.Text>
-      <Card.Link href="#"><span>Questions: {questionsList.length || 0}</span></Card.Link>
+      <Card.Link href="#"><span>Questions: {questionsList?.length || 0}</span></Card.Link>
       <CustomQuizDropdown modalId={id} setShowEdit={setShowEditQuizModal} setShowDelete={setShowDeleteQuizModal}/>
     
     </Card.Body>

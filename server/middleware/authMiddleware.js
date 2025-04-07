@@ -1,16 +1,16 @@
 const jwt = require("jsonwebtoken");
-const { User } = require('../models/models');
 const ApiError = require("../error/ApiError");
 
 
 
 const authMiddleware = async (req, res, next) => {
-  const token = authHeader.split(" ")[1];
+   const authHeader = req.headers.authorization;
+ 
 
-  if (!token) {
+  if (!authHeader) {
     return next(ApiError.unauthorized("Authorization required"));
   }
-  const authHeader = req.headers.authorization;
+  const token = authHeader.split(" ")[1];
   if (!authHeader || !authHeader.startsWith("Bearer ")) {
     return next(ApiError.unauthorized("Unauthorized"));
   }

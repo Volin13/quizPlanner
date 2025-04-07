@@ -16,7 +16,9 @@ import MainLoader from './UI/Loader/Loader';
 function App() {
   return (
     <div className="App">
-        <BrowserRouter>
+        <BrowserRouter 
+        // basename="/"
+        >
           <div className="d-flex flex-column" style={{ minHeight: '100vh' }}>
             <Suspense fallback={<MainLoader />}>
               <HeaderBar />

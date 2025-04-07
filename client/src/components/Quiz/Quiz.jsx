@@ -5,8 +5,8 @@ import css from './Quiz.module.css'
 const Quiz = () => {
 // const [gameMode, setGameMode] = useState(false)
 const quiz = quizList[0]
-const {title, subTitle, description, questions, id} = quiz
-console.log(id)
+const {title, subTitle, description, questions} = quiz
+
   return (
     <>
     <div className='d-flex justify-content-center align-items-center'>

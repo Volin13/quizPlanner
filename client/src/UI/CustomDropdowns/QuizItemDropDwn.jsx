@@ -3,7 +3,7 @@ import css from './CustomDropdowns.module.css';
 
 
 const CustomQuizDropdown = ({modalId, setShowEdit, setShowDelete}) => {
-  console.log(modalId)
+
 
   return (
     <>
