@@ -45,7 +45,7 @@ const loading = false
                   <Form.Control.Feedback 
                   className='fw-semibold text-center'
                   type="invalid">
-                    {errors[field]?.message} ПОМИЛКА
+                    {errors[field]?.message}
                   </Form.Control.Feedback>
                 </InputGroup>
               </Form.Group>

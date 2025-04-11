@@ -1,7 +1,10 @@
 import React from 'react'
 // import css from './editQuizModal.module.css'
-import Button from 'react-bootstrap/Button';
+
 import Modal from 'react-bootstrap/Modal';
+import EditQuizForm from './EditQuizForm';
+
+
 
 const EditQuizModal = ({show, setShow }) => {
 
@@ -11,7 +14,9 @@ const EditQuizModal = ({show, setShow }) => {
     <Modal.Header closeButton>
       <Modal.Title>Modal</Modal.Title>
     </Modal.Header>
-    <Modal.Body>Modal body content</Modal.Body>
+    <Modal.Body> 
+      <EditQuizForm/>
+    </Modal.Body>
   </Modal>
   )
 }

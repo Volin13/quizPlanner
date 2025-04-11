@@ -4,6 +4,7 @@
       "title": "General Knowledge Quiz",
       "subTitle": "General subtitle",
       "description": "Test your general knowledge with these fun questions.",
+      "time": "10:00",
       "questions": [
         {
           "question": "What is the capital of France?",
@@ -41,6 +42,8 @@
       "id": 2,
       "title": "Science Trivia",
       "subTitle": "General subtitle",
+            "time": "10:00",
+
 
       "description": "Challenge yourself with these science-related questions.",
       "questions": [
@@ -80,6 +83,8 @@
       "id": 3,
       "title": "History Quiz",
       "subTitle": "General subtitle",
+            "time": "10:00",
+
 
       "description": "How well do you know world history?",
       "questions": [
@@ -119,6 +124,8 @@
       "id": 4,
       "title": "Sports Quiz",
       "subTitle": "General subtitle",
+            "time": "10:00",
+
 
       "description": "Test your knowledge of sports and athletics.",
       "questions": [
@@ -158,6 +165,8 @@
       "id": 5,
       "title": "Movie Trivia",
       "subTitle": "General subtitle",
+            "time": "10:00",
+
 
       "description": "Are you a movie buff? Test your knowledge here!",
       "questions": [

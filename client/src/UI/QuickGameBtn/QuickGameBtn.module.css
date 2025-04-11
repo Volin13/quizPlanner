@@ -1,0 +1,58 @@
+.quickGameBtn {
+    width: 50%;
+  display: flex;
+  padding: 10px;
+  font-size: 30px;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  background-color: var(--blueColor);
+  color: var(--primaryWhiteColor);
+  border: 4px solid var( --primaryWhiteColor);
+  border-radius: 10px;
+
+
+
+  font-weight: 900;
+  paint-order: stroke fill;
+    line-height: 0.9;
+    -webkit-text-stroke: 5px var(--primaryRedColor);
+
+
+  position: absolute;
+  transform: rotate(15deg);
+  transform-origin: center;
+  z-index: 100;
+  box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.3);
+right: -120px;
+bottom: -60px;
+
+
+transition: transform 0.3s ease;
+}
+.quickGameBtn:hover {
+  background-color: var(--primaryRedColor );
+  -webkit-text-stroke: 5px var(--blueColor);
+
+  border: 4px solid var(--blueColor); 
+  transform: rotate(0) translate(20px, -50px);
+  z-index: 103;
+}
+.quickGameText{
+    display: inline-block;
+    white-space: normal;
+    width: 90%;
+}
+.playIcon{
+height: 20px;
+width: 20px;
+}
+
+/* @keyframes rotation {
+  0% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(0)translateX(20);
+  }
+} */

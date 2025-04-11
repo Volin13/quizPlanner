@@ -54,8 +54,9 @@
     width: 350px;
     background-color: var(--greenColor);
     background: linear-gradient(135deg, #28a745, #218838);
+
     color: var(--primaryWhiteColor);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.2),  inset 0 0 8px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
 

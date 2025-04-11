@@ -10,7 +10,7 @@ width: 50%;
     overflow: hidden;
     position: relative;
     display: flex;
-    justify-content: end;
+    justify-content: start;
 
 
 }

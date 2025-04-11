@@ -13,7 +13,11 @@ const path = require("path");
 const PORT = process.env.PORT || 5000;
 
 const app = express();
-app.use(cors());
+// app.use(cors());
+app.use(cors({
+  origin: 'http://localhost:5173',
+  credentials: true
+}));
 app.use(passport.initialize());
 app.use(cookieParser());
 app.use(express.urlencoded({ extended: true }));
