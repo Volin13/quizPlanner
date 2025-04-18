@@ -13,9 +13,9 @@
 
 
 
+  line-height: 0.9;
   font-weight: 900;
   paint-order: stroke fill;
-    line-height: 0.9;
     -webkit-text-stroke: 5px var(--primaryRedColor);
 
 

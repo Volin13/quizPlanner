@@ -1,0 +1,26 @@
+.tooltipWrapper {
+
+  display: inline-block;
+ 
+  text-wrap: wrap;
+}
+.tooltip{
+    white-space: nowrap;
+    padding-top: 15px ;
+    border-radius: 5px;
+    position: fixed;
+    z-index: 9000;
+    pointer-events: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.2),inset 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    clip-path: polygon(0 0, 34% 37%, 100% 37%, 100% 100%, 75% 100%, 0 100%, 0 37%);
+    background-color: var(--blueColor);
+
+}
+.tooltipText{    
+    font-weight: 900;
+    paint-order: stroke fill;
+padding: 15px 15px 5px;
+-webkit-text-stroke: 3px var(--primaryRedColor);
+font-size: 26px;
+}

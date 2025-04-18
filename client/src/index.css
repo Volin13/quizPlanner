@@ -1,7 +1,7 @@
 :root {
   --primaryRedColor: #e53935;
   --secondaryRedColor: #af4f4f;
-  --greyColor: #ececec;
+  --greyColor: hsl(0, 0%, 93%);
   --blueColor: #1565c0;
   --primaryWhiteColor: #ffffff;
   --greyBgColor: #efefef;
@@ -172,4 +172,28 @@ display: none !important;
 .modal-content{
   background: linear-gradient(135deg,#1565c0, #ff4b2b );
 
+}
+
+.colorfulBorder{
+
+  position: relative;
+  display: inline-block;
+  border: 10px solid transparent;
+  border-radius: 12px;
+  animation: borderAnimation 8s linear infinite;
+}
+
+@keyframes borderAnimation {
+  0% {
+    border-image-source: linear-gradient(90deg, red, blue, green);
+  }
+  33% {
+    border-image-source: linear-gradient(180deg, red, blue, green);
+  }
+  66% {
+    border-image-source: linear-gradient(270deg, red, blue, green);
+  }
+  100% {
+    border-image-source: linear-gradient(360deg, red, blue, green);
+  }
 }

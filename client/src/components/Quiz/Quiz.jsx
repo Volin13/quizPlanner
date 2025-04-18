@@ -18,7 +18,7 @@ const [showAnswers, setShowAnswers] = useState(false)
   return (
     <>
     <div className='d-flex gap-3 justify-content-center align-items-center'>
-        <div className='h-100 gap-2 d-flex flex-column justify-content-around align-items-center'>
+        <div className={`${css.quizMainContainer} d-flex flex-column justify-content-center align-items-center`}>
        <h1 className={css.quizMainTitle}>{title}</h1> 
        <h2 className={css.quizMainSubTitle}>{subTitle}</h2>
        <p>{description}</p>
@@ -48,7 +48,7 @@ const [showAnswers, setShowAnswers] = useState(false)
         </div>
 
         <img 
-        className={css.quizMainImg}
+        className={`${css.quizMainImg} colorfulBorder`}
      src='https://res.cloudinary.com/dwgpcl0nu/image/upload/v1743002518/quiz/pak5atxoqjazupmzmhmz.webp'
     alt="quiz image" />
     </div>

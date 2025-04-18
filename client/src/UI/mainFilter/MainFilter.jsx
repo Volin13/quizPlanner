@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import { Image, InputGroup, OverlayTrigger, Tooltip } from 'react-bootstrap';
+import { Image, InputGroup } from 'react-bootstrap';
 import { Form } from 'react-bootstrap';
 import searchIcon from '../../assets/icons/search.svg'
 import clearIcon from '../../assets/icons/clear.svg';
@@ -8,6 +8,9 @@ import { useLocation } from 'react-router-dom';
 import {
   CATALOG_ROUTE,
 } from '../../utils/constants';
+import TooltipWrapper from '../TooltipWrapper/TooltipWrapper';
+
+
 const MainFilter = () => {
   const [isHovered, setIsHovered] = useState(false);
   const [inputValue, setInputValue] = useState('');
@@ -68,15 +71,8 @@ const MainFilter = () => {
               border: !isHovered && 'none',
             }}
           >
-
-            <OverlayTrigger
-              placement="bottom"
-              overlay={<Tooltip id="tooltip-bottom">Find</Tooltip>}
-              container={document.body}
-              flip={false}
-              transition={false}
-            >
-              <button type="button" className="d-flex align-items-center">
+            <TooltipWrapper  tooltipText='Find'>
+            <button type="button" className="d-flex align-items-center">
                 <InputGroup.Text
                   className={css.searchLable}
                   style={{
@@ -91,7 +87,11 @@ const MainFilter = () => {
                   <Image className={css.searchIcon} src={searchIcon} />
                 </InputGroup.Text>
               </button>
-            </OverlayTrigger>
+            
+            </TooltipWrapper           >
+           
+             
+
 
             <Form.Control
               ref={mainFilter}
